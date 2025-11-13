@@ -32,6 +32,7 @@ export async function getCityByNameService(name: string): Promise<CityProps[] | 
 
     return [city];
   } catch (error) {
+    console.log('❌ Erro ao buscar cidade:', error);
     return [];
   }
 }
