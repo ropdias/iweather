@@ -9,7 +9,10 @@
     "web": "expo start --web",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
   },
   "dependencies": {
     "@expo-google-fonts/nunito": "^0.2.3",
@@ -32,6 +35,11 @@
     "@types/axios": "^0.14.0",
     "@types/react": "~18.2.14",
     "babel-plugin-module-resolver": "^5.0.0",
+    "eslint": "^8.57.1",
+    "eslint-config-expo": "^10.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
     "react-native-svg-transformer": "^1.0.0",
     "typescript": "^5.1.3"
   },
