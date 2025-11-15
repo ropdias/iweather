@@ -19,5 +19,3 @@ web-build/
 .env
 
 /__tests__/coverage/
-
-eas.json
