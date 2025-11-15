@@ -6,12 +6,17 @@
   "build": {
     "preview": {
       "android": {
-        "distribution": "internal"
+        "distribution": "internal",
+        "image": "latest"
       },
       "ios": {
         "simulator": true
       }
     },
-    "production": {}
+    "production": {
+      "android": {
+        "image": "latest"
+      }
+    }
   }
 }
