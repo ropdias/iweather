@@ -15,7 +15,8 @@
         "autoIncrement": "buildNumber",
         "simulator": true,
         "image": "latest"
-      }
+      },
+      "channel": "preview"
     },
     "production": {
       "autoIncrement": true,
@@ -26,19 +27,20 @@
       "ios": {
         "autoIncrement": "buildNumber",
         "image": "latest"
-      }
+      },
+      "channel": "production"
     }
   },
   "submit": {
     "preview": {
       "android": {
         "track": "internal",
-        "servicesAccountKeyPath": "google-services.json",
+        "serviceAccountKeyPath": "google-services.json",
         "releaseStatus": "draft"
       },
       "ios": {
         "appleId": "rodrigopdias.dev@gmail.com",
-        "ascAppId": ""
+        "ascAppId": "6451505714"
       }
     }
   }
