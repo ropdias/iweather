@@ -12,13 +12,19 @@
         "image": "latest"
       },
       "ios": {
-        "simulator": true
+        "autoIncrement": "buildNumber",
+        "simulator": true,
+        "image": "latest"
       }
     },
     "production": {
       "autoIncrement": true,
       "android": {
         "autoIncrement": "versionCode",
+        "image": "latest"
+      },
+      "ios": {
+        "autoIncrement": "buildNumber",
         "image": "latest"
       }
     }
@@ -29,6 +35,10 @@
         "track": "internal",
         "servicesAccountKeyPath": "google-services.json",
         "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "rodrigopdias.dev@gmail.com",
+        "ascAppId": ""
       }
     }
   }
