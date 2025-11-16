@@ -57,8 +57,5 @@ jobs:
           echo $GOOGLE_SERVICES_64 > google-services.json.b64
           base64 -d -i google-services.json.b64 > google-services.json
 
-      - name: Build and Submit Android
-        run: eas build --platform android --profile preview --non-interactive --auto-submit-with-profile=preview --no-wait
-      
-      - name: Build and Submit iOS
-        run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform ios --profile production --non-interactive --auto-submit-with-profile=preview --no-wait
+      - name: Build and Submit (Android and iOS)
+        run: EXPO_APPLE_APP_SPECIFIC_PASSWORD=${{ secrets.EAS_APPLE_APP_SPECIFIC_PASSWORD }} eas build --platform all --profile preview --non-interactive --auto-submit-with-profile=preview --no-wait
