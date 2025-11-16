@@ -5,8 +5,10 @@
   },
   "build": {
     "preview": {
+      "autoIncrement": true,
       "android": {
         "distribution": "internal",
+        "autoIncrement": "versionCode",
         "image": "latest"
       },
       "ios": {
@@ -14,8 +16,19 @@
       }
     },
     "production": {
+      "autoIncrement": true,
       "android": {
+        "autoIncrement": "versionCode",
         "image": "latest"
+      }
+    }
+  },
+  "submit": {
+    "preview": {
+      "android": {
+        "track": "internal",
+        "servicesAccountKeyPath": "google-services.json",
+        "releaseStatus": "draft"
       }
     }
   }
